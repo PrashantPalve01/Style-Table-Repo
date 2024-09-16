@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling a Table</title>
+    <style>
+        thead{
+            background-color: green;
+            text-align: left;
+        }
+        .final{
+            background-color: rgb(209, 208, 208);
+        }
+        table{
+            border: 1px rgb(161, 159, 159) solid;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price per Unit</th>
+                <th>Description</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>2</td>
+                <td>$10</td>
+                <td>This is product 1</td>
+                <td><b>$20</b></td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>3</td>
+                <td>$20</td>
+                <td>This is product 2</td>
+                <td><b>$60</b></td>
+            </tr>
+            <tr class="final">
+                <td colspan="4">
+                    <b>Sum</b>
+                </td>
+                <td><b>$80</b></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
